@@ -50,6 +50,7 @@ const styles = {
     borderRadius: '5%',
     cursor: 'pointer',
     zIndex: 1000,
+    background-image: url(../images/icons/top-arrow.svg);
   },
   
 };

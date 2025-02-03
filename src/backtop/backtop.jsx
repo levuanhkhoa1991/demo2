@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../backtop/backtop.css";
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -27,9 +27,11 @@ const BackToTop = () => {
 
   return (
     showButton && (
-      <button onClick={scrollToTop} style={styles.backToTopButton}>
-        Top
-      </button>
+      <button
+        onClick={scrollToTop}
+        className="backtop"
+        style={styles.backToTopButton}
+      ></button>
     )
   );
 };
@@ -39,12 +41,12 @@ const styles = {
     position: "fixed",
     bottom: "1vw",
     right: "1vw",
-    padding: "1rem",
+    padding: "2vw",
     fontSize: "16px",
     backgroundColor: "#007bff",
     color: "#fff",
     border: "none",
-    borderRadius: "5%",
+    borderRadius: "50%",
     cursor: "pointer",
     zIndex: 1000,
   },

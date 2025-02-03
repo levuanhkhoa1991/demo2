@@ -40,6 +40,7 @@ const BackToTop = () => {
 const styles = {
   backToTopButton: {
     position: 'fixed',
+    background-image: url(../images/icons/top-arrow.svg),
     bottom: '1vw',
     right: '1vw',
     padding: '1rem',
@@ -50,7 +51,6 @@ const styles = {
     borderRadius: '5%',
     cursor: 'pointer',
     zIndex: 1000,
-    background-image: url(../images/icons/top-arrow.svg);
   },
   
 };
